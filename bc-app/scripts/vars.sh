@@ -1,0 +1,4 @@
+#!/bin/bash
+#this is required (when not using cello) to replace env variables in fabric-solo-4.yaml
+
+export COMPOSE_PROJECT_PATH=/opt/cello/fabric-1.0 && export COMPOSE_PROJECT_NAME=chain1 && export ORDERER_PORT=7050 && export PEER0_ORG1_GRPC_PORT=7051 && export CA_ORG2_ECAP_PORT=8054 && export CA_ORG1_ECAP_PORT=7054 && export PEER0_ORG2_GRPC_PORT=9051 && export PEER0_ORG2_EVENT_PORT=9053 && PEER0_ORG1_EVENT_PORT=7053 && export PEER0_ORG1_EVENT_PORT=7053 && export PEER1_ORG1_GRPC_PORT=8051 && export PEER1_ORG1_EVENT_PORT=8053&& export PEER1_ORG2_GRPC_PORT=10051 && export PEER1_ORG2_EVENT_PORT=10053 && export DASHBOARD_PORT=8150 && export HLF_VERSION=1.0.5 && export CLUSTER_NETWORK=cello_net_kafka && export COUCHDB0_PORT=5984 && export COUCHDB1_PORT=6984 && export COUCHDB2_PORT=7984 && export COUCHDB3_PORT=8984
